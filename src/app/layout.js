@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <ul className="flex gap-4">
        <Link href="/">Home</Link>
-       <Link href="/about">About</Link>
+       <Link href="/attarpage">Atar</Link>
        <Link href="/contact">contact</Link>
         </ul>
 
