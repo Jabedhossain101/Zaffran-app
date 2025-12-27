@@ -99,14 +99,14 @@ const Navbar = () => {
           </Link>
           <Link
             onClick={() => setIsMenuOpen(false)}
-            href="/atar"
+            href="/attarpage"
             className="block px-4"
           >
             Atar
           </Link>
           <Link
             onClick={() => setIsMenuOpen(false)}
-            href="/panjabi"
+            href="/panjabipage"
             className="block px-4"
           >
             Panjabi
