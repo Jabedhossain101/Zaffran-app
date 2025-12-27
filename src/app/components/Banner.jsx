@@ -19,7 +19,7 @@ const slides = [
     description:
       'Embrace tradition with our handcrafted panjabi collection featuring exquisite embroidery.',
     image:
-      'https://images.unsplash.com/photo-1615813967515-e1838c1c5116?q=80&w=2000', // Replace with your image
+      'https://images.unsplash.com/photo-1615813967515-e1838c1c5116?q=80&w=2000', 
     color: 'bg-[#4a1d1d]',
   },
   {
@@ -46,7 +46,7 @@ const slides = [
 
 export default function Banner() {
   return (
-    <div className="relative group w-full h-[600px] md:h-[750px] overflow-hidden">
+    <div className="relative group w-full h-[600px] overflow-hidden">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
         effect="fade"

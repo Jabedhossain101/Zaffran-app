@@ -21,10 +21,10 @@ const Navbar = () => {
           <Link href="/" className="text-[#C9974C]">
             Home
           </Link>
-          <Link href="/atar" className="hover:text-[#C9974C]">
+          <Link href="/attarpage" className="hover:text-[#C9974C]">
             Atar
           </Link>
-          <Link href="/panjabi" className="hover:text-[#C9974C]">
+          <Link href="/panjabipage" className="hover:text-[#C9974C]">
             Panjabi
           </Link>
           <Link href="/winter" className="hover:text-[#C9974C]">
@@ -84,7 +84,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      
+
       {isMenuOpen && (
         <div className="md:hidden mt-4 bg-white border-t pt-4 space-y-4 text-gray-700 font-medium">
           <Link
@@ -132,7 +132,6 @@ const Navbar = () => {
           </div>
 
           <div className="px-4">
-            
             <button className="w-full btn btn-sm bg-[#C9974C] hover:bg-[#b08340] text-white border-none">
               <User size={16} className="mr-1" /> Login
             </button>
