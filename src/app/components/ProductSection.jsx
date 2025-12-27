@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Eye, ShoppingCart } from 'lucide-react';
+import Link from 'next/link';
 
 const products = [
   {
@@ -134,10 +135,14 @@ export default function ProductSection() {
 
                 {/* Hover Action Buttons */}
                 <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-8 gap-3">
-                  <button className="flex items-center gap-2 bg-[#d4af37] text-white px-4 py-2 rounded-md hover:bg-[#b8962d] transition-all transform translate-y-4 group-hover:translate-y-0">
+                  {/* View button-e Link add kora hoyeche */}
+                  <Link
+                    href={`/product/${product.id}`}
+                    className="flex items-center gap-2 bg-[#d4af37] text-white px-4 py-2 rounded-md hover:bg-[#b8962d] transition-all transform translate-y-4 group-hover:translate-y-0"
+                  >
                     <Eye size={18} />
                     <span className="text-sm font-medium">View</span>
-                  </button>
+                  </Link>
                   <button className="flex items-center gap-2 bg-[#4a1d1d] text-white px-4 py-2 rounded-md hover:bg-[#331414] transition-all transform translate-y-4 group-hover:translate-y-0 delay-75">
                     <ShoppingCart size={18} />
                     <span className="text-sm font-medium">Add</span>
