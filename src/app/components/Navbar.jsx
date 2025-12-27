@@ -69,9 +69,12 @@ const Navbar = () => {
           </button>
 
           {/* Login (Desktop) */}
-          <button className="hidden md:flex btn btn-sm bg-[#C9974C] hover:bg-[#b08340] text-white border-none px-5">
+          <Link
+            href="/login"
+            className="hidden md:flex btn btn-sm bg-[#C9974C] hover:bg-[#b08340] text-white border-none px-5"
+          >
             <User size={16} className="mr-1" /> Login
-          </button>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button
