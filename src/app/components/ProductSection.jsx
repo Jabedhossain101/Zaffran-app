@@ -90,7 +90,7 @@ export default function ProductSection() {
         </div>
 
         {/* Filter Buttons */}
-        <div className="flex justify-center gap-4 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-4 mb-12">
           {filterOptions.map(option => (
             <button
               key={option}
