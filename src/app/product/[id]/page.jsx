@@ -13,7 +13,7 @@ import {
 import { products } from '../../../data/products';
 
 export default function ProductDetails({ params }) {
-  const { id } = use(params); // ✅ IMPORTANT FIX
+  const { id } = use(params); 
 
   const product = products.find(p => p.id === id);
 
