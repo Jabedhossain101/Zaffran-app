@@ -76,7 +76,7 @@ export default function ProductSection() {
   return (
     <section className="bg-white py-20 px-6">
       <div className="container mx-auto">
-        {/* Header Section */}
+        {/* Header */}
         <div className="text-center mb-12">
           <span className="text-[#d4af37] font-medium tracking-[0.2em] uppercase text-sm">
             Handpicked For You
@@ -90,8 +90,8 @@ export default function ProductSection() {
           </p>
         </div>
 
-        {/* Filter Buttons */}
-        <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-4 mb-12">
+        {/* Filters */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           {filterOptions.map(option => (
             <button
               key={option}
@@ -107,11 +107,11 @@ export default function ProductSection() {
           ))}
         </div>
 
-        {/* Products Grid */}
+        {/* Products */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {filteredProducts.map(product => (
             <div key={product.id} className="group">
-              {/* Image Container */}
+              {/* Image */}
               <div className="relative h-[450px] rounded-2xl overflow-hidden bg-[#f3f3f3]">
                 <img
                   src={product.image}
@@ -133,24 +133,50 @@ export default function ProductSection() {
                   )}
                 </div>
 
-                {/* Hover Action Buttons */}
-                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-8 gap-3">
-                  {/* View button-e Link add kora hoyeche */}
+                {/* Action Buttons */}
+                <div
+                  className="
+                    absolute inset-0
+                    bg-black/5
+                    flex items-end justify-center pb-8 gap-3
+
+                    opacity-100
+                    md:opacity-0 md:group-hover:opacity-100
+                    transition-opacity
+                  "
+                >
                   <Link
                     href={`/product/${product.id}`}
-                    className="flex items-center gap-2 bg-[#d4af37] text-white px-4 py-2 rounded-md hover:bg-[#b8962d] transition-all transform translate-y-4 group-hover:translate-y-0"
+                    className="
+                      flex items-center gap-2
+                      bg-[#d4af37] text-white
+                      px-4 py-2 rounded-md
+                      hover:bg-[#b8962d]
+                      transition-all
+                      md:translate-y-4 md:group-hover:translate-y-0
+                    "
                   >
                     <Eye size={18} />
                     <span className="text-sm font-medium">View</span>
                   </Link>
-                  <button className="flex items-center gap-2 bg-[#4a1d1d] text-white px-4 py-2 rounded-md hover:bg-[#331414] transition-all transform translate-y-4 group-hover:translate-y-0 delay-75">
+
+                  <button
+                    className="
+                      flex items-center gap-2
+                      bg-[#4a1d1d] text-white
+                      px-4 py-2 rounded-md
+                      hover:bg-[#331414]
+                      transition-all
+                      md:translate-y-4 md:group-hover:translate-y-0 md:delay-75
+                    "
+                  >
                     <ShoppingCart size={18} />
                     <span className="text-sm font-medium">Add</span>
                   </button>
                 </div>
               </div>
 
-              {/* Product Info */}
+              {/* Info */}
               <div className="mt-6 space-y-2">
                 <span className="text-xs uppercase tracking-widest text-gray-400 font-bold">
                   {product.category}
@@ -158,7 +184,7 @@ export default function ProductSection() {
                 <h3 className="text-xl font-serif font-bold text-[#2d2d2d] group-hover:text-[#d4af37] transition-colors">
                   {product.title}
                 </h3>
-                <p className="text-sm text-gray-500 line-clamp-2 leading-relaxed">
+                <p className="text-sm text-gray-500 line-clamp-2">
                   {product.description}
                 </p>
                 <div className="flex items-center gap-3 pt-2">
