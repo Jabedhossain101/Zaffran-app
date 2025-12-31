@@ -22,7 +22,7 @@ export default function Footer() {
             </h2>
             <p className="text-gray-300 leading-relaxed">
               Experience the essence of traditional South Asian elegance with
-              our premium collection of handcrafted attire and fragrances.
+              our premium collection of handcrafted attire and fragrances--designed
             </p>
             <div className="flex gap-4">
               <a
