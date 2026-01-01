@@ -10,7 +10,7 @@ export default function NewsletterSection() {
         aria-hidden="true"
       />
 
-      {/* Texture/Pattern Overlay (Optional for extra depth) */}
+      
       <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
 
       <div className="container mx-auto relative z-10 text-center text-white">
